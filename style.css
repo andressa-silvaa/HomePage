@@ -1,0 +1,103 @@
+body, html {
+  height: 100%;
+}
+main{
+  height: 100%;
+}
+.container-fluid {
+  height: 100%;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.863);
+  margin: 10px;
+}
+
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: white;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black;
+  font-weight: bold;
+}
+#modoBotao {
+  position: relative;
+  overflow: hidden;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  border: 0.5px solid rgba(0, 0, 0, 0.37);
+  background-color: #fff; 
+  transition: background-color 0.3s ease; 
+}
+
+#modoBotao:hover {
+  background-color: #fff; 
+}
+
+body.dark-mode #modoBotao{
+  background-color: #223344; 
+  border-color: #fff; 
+}
+
+#interruptor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: transform 0.3s ease-in-out;
+}
+
+#solIcone {
+  margin: 0 5px;
+  color: #000; 
+  transition: color 0.3s ease; 
+}
+
+#modoBotao.dark-mode #solIcone {
+  color: #000; 
+}
+
+#luaIcone {
+  margin: 0 5px;
+  color: white; 
+  transition: color 0.3s ease; 
+}
+
+#modoBotao.dark-mode #luaIcone {
+  color: white; 
+}
+
+
+
+body.dark-mode {
+  background: #223344;
+  color: #fff; 
+}
+body.dark-mode nav.navbar-transparente {
+  padding: 15px 0px;
+  background:#223344;
+ 
+}
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: white !important; /* Adicione !important para garantir a precedência */
+  margin: 10px;
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link :hover {
+  color: white !important; /* Adicione !important para garantir a precedência */
+  font-weight: bold;
+}
+p {
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+.blueLink {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
